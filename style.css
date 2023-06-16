@@ -1,141 +1,128 @@
-@charset "UTF-8" ;
-*{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+@charset "UTF-8";
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-body, html{
-
-background-color:#184C78 ;
-height: 100vh;
-width: 100vw;
+body,
+html {
+  background-color: #184c78;
+  height: 100vh;
+  width: 100vw;
 }
-main{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
-section#login{
+section#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 250px;
+  height: 515px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10 px rgba(0, 0, 0, 0.527);
 
-    position:absolute ;
-    top: 50%;
-    left:  50%;
-    transform: translate(-50%, -50%);
-    background-color:white ;
-    width: 250px;
-    height: 515px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10 px rgba(0, 0, 0, 0.527);
-
-    transition: width .3s , heigth .3s;
-    transition-timing-function: ease;
+  transition: width 0.3s, heigth 0.3s;
+  transition-timing-function: ease;
 }
-section#login > div#imagem{
-display: block;
-background: #184C78 url(imagem.trabalho.webp) no-repeat;
-background-size: cover;
-background-position:center ;
-height: 200px;
+section#login > div#imagem {
+  display: block;
+  background: #184c78 url(imagem.trabalho.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
 }
-section#login > div#formulario{
-    display: block;
-    padding: 10px;
-
+section#login > div#formulario {
+  display: block;
+  padding: 10px;
 }
-div#formulario > h1{
-    text-align: center;
-    margin-bottom: 10px;
+div#formulario > h1 {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 div#formulario > p {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 
-form > div.campo{
-    background-color: #1d4f68;
-    border: 2px solid #1d4f68;;
-    display: block;
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    margin: 5px 0px;
-    
+form > div.campo {
+  background-color: #1d4f68;
+  border: 2px solid #1d4f68;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  margin: 5px 0px;
 }
 
 div.campo > label {
-    display: none;
+  display: none;
 }
 
-div.campo > i{
-   color: #c1d3db;
-   background-color: #6a93b8;
-   border-radius: 5px;
-   font-size: 2em;
-   width: 38px;
-   padding: 5px;
+div.campo > i {
+  color: #c1d3db;
+  background-color: #6a93b8;
+  border-radius: 5px;
+  font-size: 2em;
+  width: 38px;
+  padding: 5px;
 }
 
 div.campo > input:focus-within {
-    background-color: antiquewhite;
-
-
-
+  background-color: antiquewhite;
 }
 
-
-div.campo > input{
-
-background-color: #6a93b8;
-font-size: 1em;
-width: calc(100% - 45px);
-height: 100%;
-transform: translateY(-11px);
-border-radius:8px;
-padding: 4px;
-
-
+div.campo > input {
+  background-color: #6a93b8;
+  font-size: 1em;
+  width: calc(100% - 45px);
+  height: 100%;
+  transform: translateY(-11px);
+  border-radius: 8px;
+  padding: 4px;
 }
 
-form > input[type=submit] {
-    display: block;
-    font-size: 1em;
-    width: 100%;
-    height: 40px;
-    background-color:#13678A ;
-    color: aliceblue;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+form > input[type="submit"] {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  background-color: #13678a;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-form > input[type=submit]:hover{
-
-    background-color: rgb(71, 124, 106);
+form > input[type="submit"]:hover {
+  background-color: rgb(71, 124, 106);
 }
-form > a.botao{
-    display: block;
-    text-align: center;
-    font-size: 1em;
-    width: 100%;
-    height: 40px;
-    padding-top: 5px;
-    margin-top: 5px;
-    color: #13678A;
-    background-color: #d9e7ec;
-    border: 1px solid rgb(68, 142, 172);
-    border-radius: 7px;
-    text-decoration: none;
+form > a.botao {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  padding-top: 5px;
+  margin-top: 5px;
+  color: #13678a;
+  background-color: #d9e7ec;
+  border: 1px solid rgb(68, 142, 172);
+  border-radius: 7px;
+  text-decoration: none;
 }
 
 form > a.botao:hover {
-
-    background-color: #63bee6;
-
+  background-color: #63bee6;
 }
 
-form > a.botao > i{
-    font-size: 0.8em;
+form > a.botao > i {
+  font-size: 0.8em;
 }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <section id="login">
+        <div id="imagem">
+        </div>
+        <div id="formulario">
+          <h1>Cadastro de Usuário</h1>
+          <p>Bem-vindo(a) ao Cadastro!</p>
+          <form onsubmit="cadastro(event)">
+
+            <div class="campo">
+
+              <i class="material-icons">@</i>
+              <input type="email" name="email" id="ilogin"
+                placeholder="Seu e-mail" autocomplete="email" required
+                maxlength="30" minlength="5">
+              <br>
+            </div>
+            <div class="campo">
+
+              <i class="material-icons">vpn_key</i>
+              <input type="password" name="password" id="isenha"
+                placeholder="Sua senha" autocomplete="current-password" required
+                max="6" min="12">
+              <br>
+            </div>
+
+            <input type="submit" value="Cadastrar">
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

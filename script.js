@@ -85,7 +85,7 @@ function login(event) {
       // Faça algo com a resposta do servidor
       console.log(data);
       localStorage.setItem("token", data.token);
-      window.location.href = "/";
+      window.location.href = "/PI.2023/";
     })
     .catch((error) => {
       // Lida com erros de requisição
@@ -116,7 +116,7 @@ function cadastro(event) {
       // Faça algo com a resposta do servidor
       console.log(data);
       localStorage.setItem("token", data.token);
-      window.location.href = "/";
+      window.location.href = "/PI.2023/";
     })
     .catch((error) => {
       // Lida com erros de requisição
